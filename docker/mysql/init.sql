@@ -1,0 +1,4 @@
+CREATE DATABASE IF NOT EXISTS laravel;
+CREATE USER 'user'@'%' IDENTIFIED BY 'sua_senha';
+GRANT ALL PRIVILEGES ON laravel.* TO 'user'@'%';
+FLUSH PRIVILEGES;
